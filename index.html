@@ -3,55 +3,113 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <title>Weekly News</title>
+    <title>The Neighborhood News</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+            font-family: Georgia, serif;
+            background: #f7f3ea;
+            color: #222;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 4px solid #222;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-style: italic;
+        }
+
+        section {
+            margin-top: 40px;
+        }
+
+        .latest {
+            text-align: center;
+            padding: 35px;
+            border: 2px solid #222;
+            background: white;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .issues {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .issue {
+            background: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        .issue a {
+            color: #222;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Weekly News</h1>
-        <p>Our neighborhood's weekly newspaper</p>
-    </header>
+<header>
+    <h1>The Neighborhood News</h1>
+    <p>Our neighborhood's weekly newspaper</p>
+</header>
 
-    <main>
 
-        <section>
-            <h2>Latest Issue</h2>
+    <section class="latest">
+        <h2>Latest Issue</h2>
 
-            <p>Issue #52 — September 2026</p>
+        <h3>Issue #52</h3>
 
-            <a href="issues/issue-52.pdf">
-                Read the Latest Issue
-            </a>
-        </section>
+        <a class="button"
+           href="issues/issue-52.pdf">
+            Read the Latest Issue
+        </a>
+    </section>
+    
 
-        <section>
-            <h2>Previous Issues</h2>
+<section>
+    <h2>Previous Issues</h2>
 
-            <p>
-                <a href="issues/issue-51.pdf">
-                    Issue #51 — September 2026
-                </a>
-            </p>
+    <div class="issues">
+        
+    </div>
+</section>
 
-            <p>
-                <a href="issues/issue-50.pdf">
-                    Issue #50 — September 2026
-                </a>
-            </p>
-
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Weekly News</p>
-    </footer>
+<footer>
+    <p>The Neighborhood News</p>
+</footer>
 
 </body>
-
 </html>
